@@ -21,11 +21,26 @@ const questions = [
         message: 'Do you need a table of contents?',
         default: false,
     },
+    //installation
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What is the first/next step to install your application?'
+        // is there a way to do this step a bunch to list the steps and then 
+    },
+    {
+        type: 'confirm',
+        name: 'installationSteps',
+        message: 'Does your project include any more steps?',
+        default: false,
+
+    },
     // usage
     {
         type: 'input',
         name: 'usage',
         message: 'What is the usage?'
+        //need a way to get screenshots
     },
     //license
     {
