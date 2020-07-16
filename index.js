@@ -151,7 +151,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contribute',
+        name: 'tests',
         message: 'Please include tests for your project.',
         validate: testsInput => {
             if (testsInput) {
@@ -194,10 +194,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    console.log(data)
-    console.log("this is the file name " + fileName)
-    console.log("this is the generate markdown " + generateMarkdown)
-    fs.writeFile('./dist/README.md', 'testing', err => {
+    fs.writeFile('./dist/README.md', generateMarkdown(data), err => {
         if (err) {
             console.log(err);
         } else {
@@ -211,7 +208,9 @@ function init() {
     inquirer.prompt(questions)
     .then(answers => {
         console.log(answers)
-        writeToFile(answers)
+        let fileName = answers.title
+        let data = answers
+        writeToFile(fileName, data)
     })
 }
 
