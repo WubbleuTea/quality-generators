@@ -78,8 +78,15 @@ const questions = [
     },
     //license
     {
+        // can they pick more than one with checkbox?
+        type: 'list',
+        name: 'licenceType',
+        message: 'Pick the liscense the application is covered under.',
+        choices: ['MIT License', 'AUR license']
+    },
+    {
         type: 'input',
-        name: 'licence',
+        name: 'licenceText',
         message: 'Provide licencing info:',
         validate: licenceInput => {
             if (licenceInput) {
@@ -89,6 +96,7 @@ const questions = [
                 return false;
             }
         }
+        // needs to add a badge to the top of te page as well as a licence
     },
     //credits
     {
@@ -99,7 +107,7 @@ const questions = [
             if (creditInput) {
                 return true;
             } else {
-                console.log("Please enter your project's licence!");
+                console.log("Please enter your project's contributors!");
                 return false;
             }
         }
@@ -127,7 +135,7 @@ const questions = [
             if (contributeInput) {
                 return true;
             } else {
-                console.log("Please enter your project's licence!");
+                console.log("Please enter your project's ways to contribute!");
                 return false;
             }
         },
@@ -148,12 +156,38 @@ const questions = [
             if (testsInput) {
                 return true;
             } else {
-                console.log("Please enter your project's licence!");
+                console.log("Please enter your project's tests!");
                 return false;
             }
         },
         when: ({ testsConfirm }) => testsConfirm
     },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your GitHub name to be included in the questions section.',
+        validate: githubInput => {
+            if (githubInput) {
+                return true;
+            } else {
+                console.log("Please enter your GitHub username!");
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your e-mail address to be included in the questions section.',
+        validate: emailInput => {
+            if (emailInput) {
+                return true;
+            } else {
+                console.log("Please enter your e-mail address!");
+                return false;
+            }
+        }
+    }
 
 ];
 
@@ -163,7 +197,10 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer.prompt(questions)
+    .then(answers => {
+        console.log(answers)
+    })
 }
 
 // function call to initialize program
@@ -171,7 +208,4 @@ init();
 
 
 //need a table of contents
-inquirer.prompt(questions)
-    .then(answers => {
-        console.log(answers)
-    })
+
