@@ -6,7 +6,7 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the tite of your proect?',
+        message: 'What is the title of your project?',
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -133,13 +133,13 @@ const questions = [
         },
         when: ({ contributeConfirm }) => contributeConfirm
     },
+    //tests
     {
         type: 'confirm',
         name: 'testsConfirm',
-        message: 'Would you like to include a way to for others to contribute to your project?',
+        message: 'Would you like to include tests for your project?',
         default: false,
     },
-    //tests
     {
         type: 'input',
         name: 'contribute',
@@ -171,3 +171,7 @@ init();
 
 
 //need a table of contents
+inquirer.prompt(questions)
+    .then(answers => {
+        console.log(answers)
+    })
