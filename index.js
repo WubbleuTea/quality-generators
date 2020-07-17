@@ -43,23 +43,16 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'What is the first/next step to install your application?',
+        message: 'What are the steps to install your application?(use a & between each step)',
         validate: installationInput => {
             if (installationInput) {
                 return true;
             } else {
-                console.log("Please enter your project's next step!");
+                console.log("Please enter your project's steps!");
                 return false;
             }
         }
         // is there a way to do this step a bunch to list the steps and then 
-    },
-    {
-        type: 'confirm',
-        name: 'installationSteps',
-        message: 'Does your project include any more steps?',
-        default: false,
-        //how do I get back to installation
     },
     // usage
     {
@@ -129,7 +122,7 @@ const questions = [
     {
         type: 'input',
         name: 'credit',
-        message: 'Provide credit for one of contributors:',
+        message: 'Provide credit for your contributors(use a & between each contributor):',
         validate: creditInput => {
             if (creditInput) {
                 return true;
@@ -138,14 +131,6 @@ const questions = [
                 return false;
             }
         }
-    },
-    {
-        type: 'confirm',
-        name: 'creditConfirm',
-        message: 'Does your project include any more contributors?',
-        default: false,
-        //how do I get back to credit question if true?
-
     },
     //Questions section
     {
@@ -201,7 +186,3 @@ function init() {
 
 // function call to initialize program
 init();
-
-
-//need a table of contents
-
