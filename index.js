@@ -82,11 +82,11 @@ const questions = [
     {
         // can they pick more than one with checkbox?
         type: 'list',
-        name: 'licence',
+        name: 'license',
         message: 'Pick the liscense the application is covered under.',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
-        // needs to add a badge to the top of te page as well as a licence
+        // needs to add a badge to the top of te page as well as a license
     //credits
     {
         type: 'input',

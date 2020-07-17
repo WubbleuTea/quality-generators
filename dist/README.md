@@ -1,11 +1,10 @@
-# Title 3
-  ![License Badge](https://img.shields.io/badge/license-GPL%203.0-blue)
+# Title 4
+  ![License Badge](https://img.shields.io/badge/license-BSD%203-blue)
 
-  ## Description
-  //I think the Icon for licencing should go here?
-  description 3  
+  ## Description  
+  Here is 4 detailed description  
 
-  ## Table of Contents
+  ## Table of Contents  
   true  
   // If they need a table how would I generate that?
 
@@ -13,25 +12,25 @@
   //grab multiple steps?
   Here is the first step  
 
-  ## Usage
-  this is the usage
+  ## Usage  
+  Here is the usage
 
-  ## Licencing
-  GPL 3.0  
+  ## Licencing  
+  BSD 3  
 
-  ## Contributing
+  ## Contributing  
   To contribute to this project please follow the guidlines listed below:  
-  here is how you contribute  
+  Here is how you contribute  
 
-  ## Tests
+  ## Tests  
   // grab multiple times?  
-  test these out  
+  Here are tests  
 
-  ## Credit
+  ## Credit  
   //grab multiple times?  
-  here is my credits  
+  here is the credits  
 
-  ## Questions
+  ## Questions  
   If you have any questions do not hesitate to visit my GitHub repository or e-mail me.  
-  [joshuaweisbrodtorres](https://github.com/joshuaweisbrodtorres)  
-  [jwtorres@rocketmail.com](mailto:jwtorres@rocketmail.com)
+  [githubname](https://github.com/githubname)  
+  [email](mailto:email)
