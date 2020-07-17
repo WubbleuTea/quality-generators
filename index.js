@@ -16,7 +16,6 @@ const questions = [
                 return false;
             }
         }
-
     },
     // description
     {
@@ -61,7 +60,6 @@ const questions = [
         message: 'Does your project include any more steps?',
         default: false,
         //how do I get back to installation
-
     },
     // usage
     {
@@ -76,7 +74,6 @@ const questions = [
                 return false;
             }
         }
-        //need a way to get screenshots
     },
     //license
     {
@@ -85,29 +82,6 @@ const questions = [
         name: 'license',
         message: 'Pick the liscense the application is covered under.',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
-    },
-        // needs to add a badge to the top of te page as well as a license
-    //credits
-    {
-        type: 'input',
-        name: 'credit',
-        message: 'Provide credit for contributors:',
-        validate: creditInput => {
-            if (creditInput) {
-                return true;
-            } else {
-                console.log("Please enter your project's contributors!");
-                return false;
-            }
-        }
-    },
-    {
-        type: 'confirm',
-        name: 'creditConfirm',
-        message: 'Does your project include any more contributors?',
-        default: false,
-        //how do I get back to credit question if true?
-
     },
     //contributing
     {
@@ -151,6 +125,29 @@ const questions = [
         },
         when: ({ testsConfirm }) => testsConfirm
     },
+    //credits
+    {
+        type: 'input',
+        name: 'credit',
+        message: 'Provide credit for one of contributors:',
+        validate: creditInput => {
+            if (creditInput) {
+                return true;
+            } else {
+                console.log("Please enter your project's contributors!");
+                return false;
+            }
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'creditConfirm',
+        message: 'Does your project include any more contributors?',
+        default: false,
+        //how do I get back to credit question if true?
+
+    },
+    //Questions section
     {
         type: 'input',
         name: 'github',
@@ -177,12 +174,12 @@ const questions = [
             }
         }
     }
-
+//There is not a current question to ask for screenshots or video? not in the projects criteria but I want to add.
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile('./dist/README.md', generateMarkdown(data), err => {
+    fs.writeFile(`./dist/README.md`, generateMarkdown(data), err => {
         if (err) {
             console.log(err);
         } else {

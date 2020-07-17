@@ -1,36 +1,42 @@
-# Title 4
-  ![License Badge](https://img.shields.io/badge/license-BSD%203-blue)
+# new
+  ![License Badge](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description  
-  Here is 4 detailed description  
+  new desc  
 
   ## Table of Contents  
-  true  
-  // If they need a table how would I generate that?
-
+  // need a function to generate this entire block only if they say yes.
+  [Installation](#Installation)  
+  [Usage](#Usage)  
+  [Licensing](#Licensing)  
+  
+  [Test(s)](#Tests)  
+  [Credits](#Credits)  
+  [Questions](#Questions)  
+  
   ## Installation 
   //grab multiple steps?
-  Here is the first step  
+  here is step one  
 
   ## Usage  
-  Here is the usage
+  here is the usage
 
-  ## Licencing  
-  BSD 3  
+  ## Licensing  
+  MIT  
 
   ## Contributing  
   To contribute to this project please follow the guidlines listed below:  
-  Here is how you contribute  
+  undefined  
 
   ## Tests  
   // grab multiple times?  
-  Here are tests  
+  testing one  
 
-  ## Credit  
+  ## Credits  
   //grab multiple times?  
-  here is the credits  
+  here is the credit  
 
   ## Questions  
   If you have any questions do not hesitate to visit my GitHub repository or e-mail me.  
-  [githubname](https://github.com/githubname)  
-  [email](mailto:email)
+  GitHub: [github](https://github.com/github)  
+  E-mail: [email](mailto:email)
