@@ -39,6 +39,7 @@ const questions = [
         message: 'Do you need a table of contents?',
         default: false,
     },
+    // possibly wrap this in a function to do multiple times
     //installation
     {
         type: 'input',
@@ -81,24 +82,11 @@ const questions = [
     {
         // can they pick more than one with checkbox?
         type: 'list',
-        name: 'licenceType',
+        name: 'licence',
         message: 'Pick the liscense the application is covered under.',
-        choices: ['MIT License', 'AUR license']
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
-    {
-        type: 'input',
-        name: 'licenceText',
-        message: 'Provide licencing info:',
-        validate: licenceInput => {
-            if (licenceInput) {
-                return true;
-            } else {
-                console.log("Please enter your project's licence!");
-                return false;
-            }
-        }
         // needs to add a badge to the top of te page as well as a licence
-    },
     //credits
     {
         type: 'input',
