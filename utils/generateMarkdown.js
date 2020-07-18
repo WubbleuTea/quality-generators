@@ -51,8 +51,7 @@ E-mail: [${email}](mailto:${email})\n`;
 
   const usageCheck = () => {
     if (usageConfirm == true) {
-      return `
-${usage}\n![${usage}](/assets/images/${usageImg})`;
+      return `${usage}  \n![${usage}](/assets/images/${usageImg})`;
     } else {
       return usage;
     }
