@@ -63,6 +63,26 @@ module.exports = [
             }
         }
     },
+    {
+        type: 'confirm',
+        name: 'usageConfirm',
+        message: 'Would you like to include a screen shot of your application?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'usageImg',
+        message: "Please include the file name of your application's screenshot(please put the screenshot in an images folder that is inside an assets folder):",
+        validate: usageImgInput => {
+            if (usageImgInput) {
+                return true;
+            } else {
+                console.log("Please enter your project's screenshot!");
+                return false;
+            }
+        }
+
+    },
     //license
     {
         type: 'list',
@@ -101,7 +121,7 @@ module.exports = [
     {
         type: 'input',
         name: 'tests',
-        message: 'Please include tests for your project.',
+        message: 'Please include tests for your project. (If you would like the test in a code block please include three backticks before and after your test)',
         validate: testsInput => {
             if (testsInput) {
                 return true;
@@ -166,5 +186,4 @@ module.exports = [
             }
         }
     }
-//There is not a current question to ask for screenshots or video? not in the projects criteria but I want to add.
 ];

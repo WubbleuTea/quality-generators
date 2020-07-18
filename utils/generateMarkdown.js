@@ -1,6 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  const { title, description, table, installation, usage, license, contributeConfirm, contribute, testsConfirm, tests, technology, credit, github, email } = data
+  const { title, description, table, installation, usage, usageConfirm, usageImg, license, contributeConfirm, contribute, testsConfirm, tests, technology, credit, github, email } = data
   let bodyString = '';
   // generate table of contents
   const generateTable = () => {
@@ -49,6 +49,15 @@ E-mail: [${email}](mailto:${email})\n`;
     return installationString
   }
 
+  const usageCheck = () => {
+    if (usageConfirm == true) {
+      return `
+${usage}\n![${usage}](/assets/images/${usageImg})`;
+    } else {
+      return usage;
+    }
+  }
+
   // check for credited people and write the section out.
   let creditArr = credit.split('&&')
   const allCredits = () => {
@@ -77,7 +86,7 @@ ${description}
 ${generateTable()}
 ${installationSteps()}
 ## Usage  
-${usage}
+${usageCheck()}
   
 ## Licensing  
 ${license}  

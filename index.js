@@ -9,7 +9,7 @@ function writeToFile(data) {
         if (err) {
             console.log(err);
         } else {
-            console.log("File Created")
+            console.log("File Created. Check out the dist folder for your README.")
         }
     })
 }
