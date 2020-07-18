@@ -22,10 +22,10 @@ This application uses the terminal to create a professional README for a develop
 Creates a quality README.  
 ![Creates a quality README.](/assets/images/sample-readme-preview1.PNG)  
 
-Video Demo Youtube  
-[![Video Demo: Youtube](https://img.youtube.com/vi/exPv0C-MnvY/maxresdefault.jpg)](https://www.youtube.com/watch?v=82J_HAWHDiI)  
+Video Demo Youtube (if viewing online)   
+[![Video Demo: Youtube](https://img.youtube.com/vi/82J_HAWHDiI/maxresdefault.jpg)](https://www.youtube.com/watch?v=82J_HAWHDiI)  
 
-Video Demo File  
+Video Demo File (If viewing from desktop with cloned repo)   
 [![Video Demo: File](/assets/images/image-video-demo-file.png)](/assets/video/quality-generator-video-demo.mp4)  
 
 Sample README created using application:
