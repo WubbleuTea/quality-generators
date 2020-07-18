@@ -1,37 +1,32 @@
-# adsfasdf
-![License Badge](https://img.shields.io/badge/license-MIT-blue)
+# asdfasdf
+![License Badge](https://img.shields.io/badge/license-BSD%203-blue)
 
 ## Description  
-asdfasdf  
-
-
+asdfasdf
 
 ## Installation
- dsf  
- asdf  
- asdfa  
- asdf  
- 
+- 1
+- 4
+- adfjf
+- 
+
 ## Usage  
-asdfas
+usage
   
 ## Licensing  
-MIT  
+BSD 3  
 
 ## Contributing  
 To contribute to this project please follow the guidlines listed below:  
-asdfasdfy
+contribute
 
 ## Tests
 asdfasdf
 
-## Credits  
-  dsfa  
-  asdf  
-  asdfa  
-  asdf  
+## Credits 
+- asdfasdf
 
 ## Questions  
 If you have any questions do not hesitate to visit my GitHub repository or e-mail me.  
-GitHub: [asdfas](https://github.com/asdfas)  
-E-mail: [asdfas](mailto:asdfas)
+GitHub: [asdfasdf](https://github.com/asdfasdf)  
+E-mail: [adfasd](mailto:adfasd)
