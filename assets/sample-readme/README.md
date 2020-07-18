@@ -1,8 +1,8 @@
 # Sample README
-![License Badge](https://img.shields.io/badge/license-None-blue)
+[![License Badge](https://img.shields.io/badge/license-BSD%203-blue)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description  
-This is a description for the README video.
+This is the README for the demo.
 
 ## Table of Contents  
 [Installation](#Installation)  
@@ -15,19 +15,19 @@ This is a description for the README video.
 [Questions](#Questions)
 
 ## Installation
-- Clone repository
+- Clone Repository
 - Open Terminal
 
 ## Usage  
-Creates quality README  
-![Creates quality README](/assets/images/sample-readme-preview1.PNG)
+This application creates a README.  
+![This application creates a README.](/assets/images/sample-readme-video.PNG)
   
 ## Licensing  
-None  
+The license for this application is [BSD 3](https://opensource.org/licenses/BSD-3-Clause).  
 
 ## Contributing  
 To contribute to this project please follow the guidlines listed below:  
-Please email me.
+Please e-mail me.
 
 ## Tests
 ```node index```
