@@ -1,32 +1,50 @@
-# asdfasdf
-![License Badge](https://img.shields.io/badge/license-BSD%203-blue)
+# project 3
+![License Badge](https://img.shields.io/badge/license-GPL%203.0-blue)
 
 ## Description  
-asdfasdf
+description of project 3
+
+## Table of Contents  
+[Installation](#Installation)  
+[Usage](#Usage)  
+[Licensing](#Licensing)  
+[Contributing](#Contributing)  
+[Test(s)](#Tests)  
+[Technologies](#Technologies)  
+[Credits](#Credits)  
+[Questions](#Questions)
 
 ## Installation
-- 1
-- 4
-- adfjf
-- 
+- step 1
+- step 2
+- step 3
 
 ## Usage  
-usage
+this is the usage
   
 ## Licensing  
-BSD 3  
+GPL 3.0  
 
 ## Contributing  
 To contribute to this project please follow the guidlines listed below:  
-contribute
+Here is how you contribute
 
 ## Tests
-asdfasdf
+Here is the test
+
+## Technologies 
+- JavaScript
+- NodeJS
+- HTML
 
 ## Credits 
-- asdfasdf
+- 1
+- 2
+- 3
+- 4
+- 5
 
 ## Questions  
 If you have any questions do not hesitate to visit my GitHub repository or e-mail me.  
-GitHub: [asdfasdf](https://github.com/asdfasdf)  
-E-mail: [adfasd](mailto:adfasd)
+GitHub: [github](https://github.com/github)  
+E-mail: [email](mailto:email)

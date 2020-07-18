@@ -1,6 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  const { title, description, table, installation, usage, license, contributeConfirm, contribute, testsConfirm, tests, credit, github, email } = data
+  const { title, description, table, installation, usage, license, contributeConfirm, contribute, testsConfirm, tests, technology, credit, github, email } = data
   let bodyString = '';
   // generate table of contents
   const generateTable = () => {
@@ -9,35 +9,37 @@ function generateMarkdown(data) {
 [Installation](#Installation)  
 [Usage](#Usage)  
 [Licensing](#Licensing)  
-${checkContribute()}\n` 
+${checkConfirms()}\n` 
     } else {
-      checkContribute();
+      checkConfirms();
       return '';
     }
   }
   //checking for two optional README sections and adding them to the table of contents and the body.
-  const checkContribute = () => {
+  const checkConfirms = () => {
     let tableString = '';
+    //
     if (contributeConfirm === true) {
-      tableString += `[Contributing](#Contributing)\n` 
+      tableString += `[Contributing](#Contributing)  \n` 
       bodyString += `## Contributing  
 To contribute to this project please follow the guidlines listed below:  
 ${contribute}\n\n` 
     } 
+    // tests writing if true
     if (testsConfirm == true) {
-      tableString += `[Test(s)](#Tests)\n`
+      tableString += `[Test(s)](#Tests)  \n`
       bodyString += `## Tests\n${tests}\n\n`    
     }
-    tableString += `[Credits](#Credits)  
-[Questions](#Questions)`
-    bodyString += `${allCredits()}
+    //Things that are always going to be in the README is written here
+    tableString += `[Technologies](#Technologies)  \n[Credits](#Credits)  \n[Questions](#Questions)`
+    bodyString += `${allTech()}\n${allCredits()}
 ## Questions  
 If you have any questions do not hesitate to visit my GitHub repository or e-mail me.  
 GitHub: [${github}](https://github.com/${github})  
 E-mail: [${email}](mailto:${email})\n`;
     return tableString
 }
-  //write the installation steps
+  //check for installation steps and write the section out.
   let installationArr = installation.split('&&')
   const installationSteps = () => {
     let installationString = `## Installation\n`
@@ -55,6 +57,15 @@ E-mail: [${email}](mailto:${email})\n`;
       creditSection += `- ${person.trim()}\n`
     })
     return creditSection;
+  }
+  //check for technologies used and write the section out.
+  let techArr = technology.split('&&')
+  const allTech = () => {
+    let techSection = `## Technologies \n`
+    techArr.forEach(technology => {
+      techSection += `- ${technology.trim()}\n`
+    })
+    return techSection;
   }
 
 //the actual README 

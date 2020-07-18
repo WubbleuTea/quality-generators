@@ -112,6 +112,19 @@ module.exports = [
         },
         when: ({ testsConfirm }) => testsConfirm
     },
+    {
+        type: 'input',
+        name: 'technology',
+        message: 'What are the technologies used in your application?(use a && between each step)',
+        validate: installationInput => {
+            if (installationInput) {
+                return true;
+            } else {
+                console.log("Please enter your project's steps!");
+                return false;
+            }
+        }
+    },
     //credits
     {
         type: 'input',
