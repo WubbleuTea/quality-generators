@@ -4,7 +4,7 @@ module.exports = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is the title of your project?',
+        message: 'Please enter your project title.',
         validate: titleInput => {
             if (titleInput) {
                 return true;
@@ -39,7 +39,7 @@ module.exports = [
     {
         type: 'input',
         name: 'installation',
-        message: 'What are the steps to install your application?(use a && between each step)',
+        message: 'Write the steps to install your application.(use a && between each step)',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -53,7 +53,7 @@ module.exports = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What is the usage?',
+        message: 'Enter the usage of your application.',
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -72,7 +72,7 @@ module.exports = [
     {
         type: 'input',
         name: 'usageImg',
-        message: "Please include the file name of your application's screenshot(please put the screenshot in an images folder that is inside an assets folder):",
+        message: "Please include the file name of your application's screenshot.(please put the screenshot in an images folder that is inside an assets folder)",
         validate: usageImgInput => {
             if (usageImgInput) {
                 return true;
@@ -88,7 +88,7 @@ module.exports = [
     {
         type: 'list',
         name: 'license',
-        message: 'Pick the liscense the application is covered under.',
+        message: 'Pick the license the application is covered under.',
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     },
     //contributing
@@ -136,7 +136,7 @@ module.exports = [
     {
         type: 'input',
         name: 'technology',
-        message: 'What are the technologies used in your application?(use a && between each step)',
+        message: 'Enter the technologies used in your application.(use a && between each technology)',
         validate: installationInput => {
             if (installationInput) {
                 return true;
@@ -150,7 +150,7 @@ module.exports = [
     {
         type: 'input',
         name: 'credit',
-        message: 'Provide credit for your contributors(use a && between each contributor):',
+        message: 'Provide credit for your contributors.(use a && between each contributor)',
         validate: creditInput => {
             if (creditInput) {
                 return true;
