@@ -80,7 +80,8 @@ module.exports = [
                 console.log("Please enter your project's screenshot!");
                 return false;
             }
-        }
+        },
+        when: ({ usageConfirm }) => usageConfirm
 
     },
     //license

@@ -1,5 +1,5 @@
 # Quality Generator
-![License Badge](https://img.shields.io/badge/license-None-blue)
+[![License Badge](https://img.shields.io/badge/license-None-red)](#)
 
 ## Description  
 This application uses the terminal to create a professional README for a developer to use.

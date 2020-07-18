@@ -2,6 +2,7 @@
 function generateMarkdown(data) {
   const { title, description, table, installation, usage, usageConfirm, usageImg, license, contributeConfirm, contribute, testsConfirm, tests, technology, credit, github, email } = data
   let bodyString = '';
+  let licenseItem = license
   // generate table of contents
   const generateTable = () => {
     if (table === true) {
@@ -38,7 +39,7 @@ If you have any questions do not hesitate to visit my GitHub repository or e-mai
 GitHub: [${github}](https://github.com/${github})  
 E-mail: [${email}](mailto:${email})\n`;
     return tableString
-}
+};
   //check for installation steps and write the section out.
   let installationArr = installation.split('&&')
   const installationSteps = () => {
@@ -54,6 +55,18 @@ E-mail: [${email}](mailto:${email})\n`;
       return `${usage}  \n![${usage}](/assets/images/${usageImg})`;
     } else {
       return usage;
+    }
+  }
+
+  const createBadge = () => {
+    if (licenseItem === 'None') {
+      return `[![License Badge](https://img.shields.io/badge/license-${license}-red)](#)`
+    } else if (licenseItem === 'BSD 3') {
+      licenseItem = `The license for this application is [${license}](https://opensource.org/licenses/BSD-3-Clause).`
+      return `[![License Badge](https://img.shields.io/badge/license-${license.replace(/ /g, '%20')}-blue)](https://opensource.org/licenses/BSD-3-Clause)`
+    } else {
+      licenseItem = `The license for this application is [${license}](https://opensource.org/licenses/${license.replace(/ /g, '-')}).`
+      return `[![License Badge](https://img.shields.io/badge/license-${license.replace(/ /g, '%20')}-blue)](https://opensource.org/licenses/${license.replace(/ /g, '-')})`
     }
   }
 
@@ -78,7 +91,7 @@ E-mail: [${email}](mailto:${email})\n`;
 
 //the actual README 
   return `# ${title}
-![License Badge](https://img.shields.io/badge/license-${license.replace(/ /g, '%20')}-blue)
+${createBadge()}
 
 ## Description  
 ${description}
@@ -88,7 +101,7 @@ ${installationSteps()}
 ${usageCheck()}
   
 ## Licensing  
-${license}  
+${licenseItem}  
 
 ${bodyString}`
 }
