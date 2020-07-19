@@ -23,7 +23,7 @@ Creates a quality README (this is a static image).
 ![Creates a quality README.](/assets/images/sample-readme-preview1.PNG)  
 
 Video Demo Youtube (if viewing online, the image is a link)   
-[![Video Demo: Youtube](https://img.youtube.com/vi/ip6jc6dIs7Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=ip6jc6dIs7Q)  
+[![Video Demo: Youtube](https://i.ytimg.com/vi/ip6jc6dIs7Q/hqdefault.jpg)](https://www.youtube.com/watch?v=ip6jc6dIs7Q)  
 
 Video Demo File (if viewing from desktop with cloned repo, the image is a link)   
 [![Video Demo: File](/assets/images/image-video-demo-file.png)](/assets/video/quality-generator-demo.mp4)  
